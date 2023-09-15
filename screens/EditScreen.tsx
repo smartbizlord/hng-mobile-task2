@@ -94,7 +94,8 @@ const styles = StyleSheet.create({
         marginBottom: 15,
         borderRadius: 16,
         borderWidth: 1,
-        paddingHorizontal: 15
+        paddingHorizontal: 15,
+        color: Colors.darker
     },
     buttonWrapper: {
         marginTop: 20,

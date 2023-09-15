@@ -61,25 +61,7 @@ type SectionProps = PropsWithChildren<{
 
 
 
-function TopBar({children, title, githubActive, setGithubActive}: SectionProps): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <View style={styles.backButtonWrapper}>
-      {githubActive && <TouchableOpacity onPress={() => { setGithubActive(past => false) }} style={styles.backButton} ><Image style={styles.backImage} source={require("./images/back.png")} /></TouchableOpacity>}
-      </View>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-    </View>
-  );
-}
+
 
 const { height, width } = Dimensions.get("window")
 const Stack = createNativeStackNavigator()
